@@ -22,6 +22,9 @@
   <issue>https://github.com/EddyVerbruggen/Custom-URL-scheme/issues</issue>
 
   <preference name="URL_SCHEME" />
+  <preference name="HOST" />
+  <preference name="PATH_PREFIX" />
+  <preference name="PORT" />
 
   <engines>
     <engine name="cordova" version=">=3.0.0"/>
@@ -61,7 +64,7 @@
 
     <config-file target="AndroidManifest.xml" parent="/*/application/activity">
       <intent-filter>
-        <data android:scheme="$URL_SCHEME"/>
+        <data android:host="$HOST" android:port="$PORT" android:pathPrefix="$PATH_PREFIX" android:scheme="$URL_SCHEME" />
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
