@@ -64,7 +64,10 @@
 
     <config-file target="AndroidManifest.xml" parent="/*/application/activity">
       <intent-filter>
-        <data android:host="$HOST" android:port="$PORT" android:pathPrefix="$PATH_PREFIX" android:scheme="$URL_SCHEME" />
+        <data android:scheme="$URL_SCHEME" />
+        <data android:host="$HOST" />
+        <data android:port="$PORT" />
+        <data android:pathPrefix="$PATH_PREFIX" />
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
