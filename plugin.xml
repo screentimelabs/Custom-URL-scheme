@@ -24,6 +24,7 @@
   <preference name="URL_SCHEME" />
   <preference name="HOST" />
   <preference name="PATH_PATTERN" />
+  <preference name="IOS_SCHEME" />
 
   <engines>
     <engine name="cordova" version=">=3.0.0"/>
